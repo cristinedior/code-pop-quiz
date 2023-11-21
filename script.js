@@ -1,3 +1,4 @@
+
 var timerEl = document.getElementById('time');
 var highScore = document.getElementById('highScore');
 var startBtn = document.querySelector("#Start")
