@@ -1,0 +1,12 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.question-container {
+    font-weight: 400;
+}
+
+.choice-container {
+    font-weight: 100;
+}
+

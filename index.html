@@ -5,10 +5,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Code Pop Quiz</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+  <div class="highscore-container">
+    <form id="score-initals">
+      <label for="initials">Enter Initials: </label>
+      <input type="text" id="initials" name="initials" required>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <div class="timer-container">
+    <p>Time: <span id="timer">90</span> seconds</p>
+  </div>
+
+  <section id="quiz-container">
+    <div id="question-container"></div>
+    <h2 id="question-text"></h2>
+  </section>
   
+  <section class="choice-container">
+  </section>
+
   <script src="script.js"></script>
 
 </body>

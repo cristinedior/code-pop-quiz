@@ -1,10 +1,12 @@
-var timerEl = document.getElementById('time');
-var highScore = document.getElementById('highScore');
-var startBtn = document.querySelector("#Start")
+const question = document.getElementById("question-container");
+const choices = document.getElementById("choice-container");
+const timer = document.getElementById("timer");
+const score = document.getElementById("score-initials");
 
-var question1 = 'Where do you find your javascript file on the web browser dev tool?'
-var answer1 = ['Console', 'Network', 'Styles']
-var correctAnswer1 = 0;
+
+const questions = [
+    {}
+]
 
 addEventListener('click')
 //add event listener for start button
