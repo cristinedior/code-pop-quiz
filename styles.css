@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -10,3 +11,9 @@ body {
     font-weight: 100;
 }
 
+=======
+/*add styling to button when user selects answer*/
+/*when user clicks on a question, the selected answer is displayed in the text area below*/
+/*basic styling for h1 and h2's*/
+/*basic styling for timer and score tally*/
+>>>>>>> 8d871868fe85fa7a4de210f7645f04286df7f065
