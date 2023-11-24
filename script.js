@@ -1,32 +1,23 @@
-<<<<<<< HEAD
-const question = document.getElementById("question-container");
-const choices = document.getElementById("choice-container");
-const timer = document.getElementById("timer");
-const score = document.getElementById("score-initials");
-=======
-
-var timerEl = document.getElementById('time');
-var highScore = document.getElementById('highScore');
-var startBtn = document.querySelector("#Start")
->>>>>>> 8d871868fe85fa7a4de210f7645f04286df7f065
-
-
-const questions = [
-    {}
-]
-
-addEventListener('click')
-//add event listener for start button
-
-//create counting timer function
-
-//create if/else functions for q&a's
-
-//create score tally function
-
-//create questions and answers
-
-//create the correct/wrong function
-
-//create final page for initials/final score
-//create submit button for this
+const quizQuestions = [
+    {
+      question: "Where do you find the javascript file on the web browser dev tool?",
+      options: ["A. in Elements", "B. in Styles", "C. Console", "D. It is not possible"],
+      correctAnswer: "C. in Console"
+    },
+    {
+      question: "Are Java and Javascript the same thing?",
+      options: ["A. True", "B. False"],
+      correctAnswer: "B. False"
+    },
+    {
+      question: "What does HTML stand for?",
+      options: ["A. Hyper Text Markup Language", "B. Hello There Mate Larry", "C. Hyperlink and Text Markup Language", "D. How To Make Lentils"],
+      correctAnswer: "A. Hyper Text Markup Language"
+    },
+    {
+      question: "What does CSS stand for?",
+      options: ["A. Counter Strike: Source", "B. Computer Style Sheets", "C. Colorful Style Sheets", "D. Cascading Style Sheets"],
+      correctAnswer: "D. Cascading Style Sheets"
+    }
+  ];
+  

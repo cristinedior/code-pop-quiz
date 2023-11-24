@@ -1,19 +1,33 @@
-<<<<<<< HEAD
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.question-container {
-    font-weight: 400;
+.highscore-container {
+    display: flex;
+    flex-direction: column;
+    justify-self: start;
 }
 
-.choice-container {
-    font-weight: 100;
+/*.timer-container {
+
 }
 
-=======
-/*add styling to button when user selects answer*/
-/*when user clicks on a question, the selected answer is displayed in the text area below*/
-/*basic styling for h1 and h2's*/
-/*basic styling for timer and score tally*/
->>>>>>> 8d871868fe85fa7a4de210f7645f04286df7f065
+#quiz-container {
+
+}
+
+.choices-container {
+
+}
+
+button {
+
+}
+
+label {
+
+}
+
+input {
+
+}*/
