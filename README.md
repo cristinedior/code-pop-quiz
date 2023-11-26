@@ -43,7 +43,8 @@ THEN I can save my initials and my score
 
 # Screenshot and Deployed Site:
 
-Site URL:
+Site URL: https://cristinedior.github.io/code-pop-quiz/
+
 Screenshot:
 <img width="731" alt="Screenshot 2023-11-26 at 3 37 13 PM" src="https://github.com/cristinedior/code-pop-quiz/assets/148567509/1c90cf20-de40-41e1-8d2e-feb52dc6a7d0">
 
