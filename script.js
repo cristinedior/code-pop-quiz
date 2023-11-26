@@ -77,9 +77,8 @@ const quizQuestions = [
         showResult("Correct!");
         correctAnswers++;
       } else {
-        // Handle incorrect answer
         showResult("Wrong!");
-        // Increase the timer by 5 seconds for a wrong answer
+     
         timeLeft += 5;
         incorrectAnswers++;
       }
