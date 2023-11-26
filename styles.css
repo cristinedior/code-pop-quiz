@@ -2,32 +2,15 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.highscore-container {
+.quiz-container {
     display: flex;
-    flex-direction: column;
-    justify-self: start;
+    justify-content: center;
 }
 
-/*.timer-container {
-
+.choice-container button {
+    background-color: black;
+    color: white;
+    padding: .5%;
+    border-color: white;
 }
 
-#quiz-container {
-
-}
-
-.choices-container {
-
-}
-
-button {
-
-}
-
-label {
-
-}
-
-input {
-
-}*/

@@ -21,30 +21,23 @@ const quizQuestions = [
     }
   ];
   
-
   let currentQuestionIndex = 0;
   let correctAnswers = 0;
   let incorrectAnswers = 0;
   let timer;
-  let timeLeft = 0; 
+  let timeLeft = 0;
   
   const questionContainer = document.getElementById("question-container");
   const choiceContainer = document.querySelector(".choice-container");
   const timerElement = document.getElementById("timer");
-  const highscoreElement = document.getElementById("tally");
-  const scoreForm = document.getElementById("tally-initals");
-
-const storedHighscore = localStorage.getItem("tally");
-const highscore = Math.max(correctAnswers, storedHighscore || 0);
-highscoreElement.textContent = `High Score: ${result-container}`;
-localStorage.setItem("highscore", highscore);
+  const highscoreElement = document.getElementById("highscore");
+  const scoreForm = document.getElementById("score-initals");
   
-
-scoreForm.style.display = "none";
+  scoreForm.style.display = "none";
   
-document.addEventListener("DOMContentLoaded", startQuiz);
+  document.addEventListener("DOMContentLoaded", startQuiz);
   
-function startQuiz() {
+  function startQuiz() {
     displayQuestion();
     startTimer();
   
@@ -68,29 +61,34 @@ function startQuiz() {
   function startTimer() {
     timer = setInterval(function () {
       timerElement.textContent = timeLeft++;
-      }, 1000);
+    }, 1000);
   }
-  function stopTimer(){
+  
+  function stopTimer() {
     clearInterval(timer);
   }
-
+  
   function handleChoiceClick(event) {
     if (event.target.matches("button")) {
       const selectedOption = event.target.textContent;
   
       if (selectedOption === quizQuestions[currentQuestionIndex].correctAnswer) {
-        correctAnswers++;
+        // Handle correct answer
         showResult("Correct!");
+        correctAnswers++;
       } else {
+        // Handle incorrect answer
         showResult("Wrong!");
+        // Increase the timer by 5 seconds for a wrong answer
         timeLeft += 5;
+        incorrectAnswers++;
       }
   
       currentQuestionIndex++;
   
       if (currentQuestionIndex < quizQuestions.length) {
-          showResult("");
-          displayQuestion();
+        showResult("");
+        displayQuestion();
       } else {
         stopTimer();
         endQuiz();
@@ -105,12 +103,25 @@ function startQuiz() {
   
   function endQuiz() {
     clearInterval(timer);
+  
+    questionContainer.textContent = `You completed the quiz! You got ${correctAnswers} correct and ${incorrectAnswers} incorrect.`;
+  
+    const storedHighscore = localStorage.getItem("highscore") || 0;
+    const storedInitials = localStorage.getItem("initials") || "N/A";
+  
+    highscoreElement.textContent = `High Score: ${storedHighscore} by ${storedInitials}`;
+  
+    scoreForm.style.display = "block";
   }
   
   function handleFormSubmit(event) {
     event.preventDefault();
   
-    const initials = document.getElementById("#initials").value;
-
+    const initials = document.getElementById("initials").value;
+    const storedHighscore = localStorage.getItem("highscore") || 0;
+    const highscore = Math.max(correctAnswers, storedHighscore);
+    localStorage.setItem("highscore", highscore);
+    localStorage.setItem("initials", initials);
+  
     location.reload();
   }
