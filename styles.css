@@ -1,16 +1,35 @@
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
 }
 
-.quiz-container {
-    display: flex;
-    justify-content: center;
+.nav {
+    background-color: aquamarine;
+    font-size: small;
 }
+#quiz-container {
+    position: relative;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
 
 .choice-container button {
+    position: relative;
     background-color: black;
     color: white;
-    padding: .5%;
     border-color: white;
+    padding: 1%;    
 }
 
+#question-container {
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+
+footer {
+    padding-top: 5%;
+    align-items: center;
+    font-weight: lighter;
+
+}
